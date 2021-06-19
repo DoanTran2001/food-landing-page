@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-landing-page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#home" class="back-to-top">
+        <i class='bx bxs-to-top'></i>
+    </a>
+    <div class="nav">
+        <div class="menu-wrap container">
+            <a href="#home">
+                <div  class="menu-logo">
+                    FRESHFOOD
+                </div>
+            </a>
+            <div class="menu-content">
+                    <div  data-menu="home" class="menu-item">
+                        Home
+                    </div>
+           
+            
+                    <div data-menu="about" class="menu-item">
+                        About
+                    </div>
+            
+          
+                    <div data-menu="food-menu" class="menu-item">
+                        Menu
+                    </div>
+              
+            
+                    <div  data-menu="testimonial" class="menu-item">
+                        Testimoial
+                    </div>
+            
+            </div>
+            <div class="menu-cart">
+                <div  data-menu="" class="menu-cart-btn">
+                    <i class='bx bx-cart'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="slogan">
+                        <h1>Freshfood</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit neque, inventore similique id eligendi, quos ea quis pariatur, deserunt at cupiditate autem ipsa. Ipsa nobis magnam aliquam quis illum!</p>
+                        <button>Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <img src="img/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="" class="about-img">
+                </div>
+                <div class="col-5">
+                    <div class="about-slogan">
+                        <h3><span class="primary-color">We</span> create <span class="primary-color">delicious</span>  memories for <span class="primary-color">you!</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ad adipisci cum ullam iusto pariatur maxime ratione mollitia dignissimos nulla. Architecto libero consequatur asperiores quibusdam dolore quasi natus accusantium culpa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="food" id="food-menu">
+        <div class="container">
+            <div class="food-menu">
+                <div class="food-heading">
+                    <h1>What will <span class="primary-color">you</span> eat today?</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur autem expedita non voluptatibus aliquid nulla nemo hic provident ratione quibusdam, aspernatur quas numquam optio, incidunt accusantium consequatur maxime, nihil ea?</p>
+                </div>
+                <div class="food-category">
+                    <button class="active btn" id="1">
+                        All food
+                    </button>
+                    <button class="btn" id="2">Salad</button>
+                    <button class="btn" id="3">Lorem</button>
+                    <button class="btn" id="4">Lorem</button>
+                    <!-- <button class="btn" id="5">Lorem</button> -->
+                </div>
+                <div class="food-wrap active" data-id="1">
+                    <div class="food-item-wrap">
+                        <div class="food-item">
+                            <div class="food-content">
+                                <div class="food-image">
+                                    <img src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="" class="food-img">
+                                </div>
+                                <div class="food-info">
+                                    <h3 class="food-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perspiciatis voluptatem accusamus! Repellat soluta commodi a aut tempore iure impedit? Nihil ex quo qui suscipit similique veniam aut eligendi minima!</h3>
+                                    <p class="food-price">120$</p>
+                                </div>
+                            </div>
+                            <div class="food-hover">
+                                <div class="food-hover-list">
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-share'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-heart'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-cart'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="img/sina-piryae-bBzjWthTqb8-unsplash.jpg" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1499638309848-e9968540da83?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIyfHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1501200291289-c5a76c232e5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-wrap" data-id="2">
+                    <div class="food-item-wrap">
+                        <div class="food-item">
+                            <div class="food-content">
+                                <div class="food-image">
+                                    <img src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="" class="food-img">
+                                </div>
+                                <div class="food-info">
+                                    <h3 class="food-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perspiciatis voluptatem accusamus! Repellat soluta commodi a aut tempore iure impedit? Nihil ex quo qui suscipit similique veniam aut eligendi minima!</h3>
+                                    <p class="food-price">120$</p>
+                                </div>
+                            </div>
+                            <div class="food-hover">
+                                <div class="food-hover-list">
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-share'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-heart'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-cart'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="img/sina-piryae-bBzjWthTqb8-unsplash.jpg" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="food-wrap" data-id="3">
+                    <div class="food-item-wrap">
+                        <div class="food-item">
+                            <div class="food-content">
+                                <div class="food-image">
+                                    <img src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="" class="food-img">
+                                </div>
+                                <div class="food-info">
+                                    <h3 class="food-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perspiciatis voluptatem accusamus! Repellat soluta commodi a aut tempore iure impedit? Nihil ex quo qui suscipit similique veniam aut eligendi minima!</h3>
+                                    <p class="food-price">120$</p>
+                                </div>
+                            </div>
+                            <div class="food-hover">
+                                <div class="food-hover-list">
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-share'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-heart'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-cart'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="img/sina-piryae-bBzjWthTqb8-unsplash.jpg" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1499638309848-e9968540da83?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIyfHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1501200291289-c5a76c232e5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-wrap" data-id="4">
+                    <div class="food-item-wrap">
+                        <div class="food-item">
+                            <div class="food-content">
+                                <div class="food-image">
+                                    <img src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="" class="food-img">
+                                </div>
+                                <div class="food-info">
+                                    <h3 class="food-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perspiciatis voluptatem accusamus! Repellat soluta commodi a aut tempore iure impedit? Nihil ex quo qui suscipit similique veniam aut eligendi minima!</h3>
+                                    <p class="food-price">120$</p>
+                                </div>
+                            </div>
+                            <div class="food-hover">
+                                <div class="food-hover-list">
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-share'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-heart'></i>
+                                    </div>
+                                    <div class="food-hover-item">
+                                        <i class='bx bxs-cart'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="img/sina-piryae-bBzjWthTqb8-unsplash.jpg" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1499638309848-e9968540da83?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIyfHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                        <div class="food-item">
+                            <div class="food-image">
+                                <img src="https://images.unsplash.com/photo-1501200291289-c5a76c232e5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" class="food-img">
+                            </div>
+                            <div class="food-info">
+                                <h3 class="food-name">Lorem</h3>
+                                <p class="food-price">120$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="review" id="testimonial">
+        <div class="container">
+            <div class="review-list">
+                <div class="review-item">
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maiores non officiis laborum voluptate eos placeat sunt, accusamus, voluptates accusantium tempora tempore. Ad expedita, vel ea consectetur laboriosam libero minus.</p>
+                        <div class="review-author">
+                            <img src="img/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="">
+                        </div>
+                        <span class="review-author-name">Michael Dam</span>
+                        <div class="review-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item active">
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maiores non officiis laborum voluptate eos placeat sunt, accusamus, voluptates accusantium tempora tempore. Ad expedita, vel ea consectetur laboriosam libero minus.</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <span class="review-author-name">Toa Heftiba</span>
+                        <div class="review-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maiores non officiis laborum voluptate eos placeat sunt, accusamus, voluptates accusantium tempora tempore. Ad expedita, vel ea consectetur laboriosam libero minus.</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <span class="review-author-name">Karl Fredrickson</span>
+                        <div class="review-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>

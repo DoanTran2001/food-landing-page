@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #f0f3f7;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-wrap {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1rem 0;
+}
+.menu-logo {
+  font-size: 2rem;
+  color: #0F9D58;
+  font-weight: 800;
+}
+.menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.menu-item {
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  color: #7a7a7b;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
+.menu-item:hover, .menu-item.active {
+  color: #ffffff;
+  background-color: #0F9D58;
+  border-radius: 1rem;
+}
+.menu-cart-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0F9D58;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.menu-cart-btn:hover {
+  background-color: #0F9D58;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section {
+  padding: 9rem 0;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/brooke-lark-08bOYnH_r_E-unsplash.jpg) no-repeat center/cover fixed;
+}
+
+.slogan {
+  text-align: left;
+}
+.slogan h1 {
+  font-size: 7rem;
+  color: #0F9D58;
+}
+.slogan button {
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  background-color: #f0f3f7;
+  color: #0F9D58;
+  border: 1.5px solid #0F9D58;
+  cursor: pointer;
+  margin: 2rem 0;
+  font-weight: 600;
+  font-size: 2rem;
+  transition: 0.25s linear;
+}
+.slogan button:hover {
+  background-color: #0F9D58;
+  color: #ffffff;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.primary-color {
+  color: #0F9D58;
+}
+
+.about {
+  height: 100vh;
+}
+.about-img {
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.about-slogan {
+  padding: 4rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transform: translateX(-10rem);
+  text-align: center;
+}
+.about-slogan h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #7a7a7b;
+}
+
+.food {
+  background: url(img/katherine-chase-4MMK78S7eyk-unsplash.jpg) center/cover no-repeat fixed;
+  padding: 3rem 0;
+}
+.food-menu {
+  padding: 4rem;
+  background-color: #ffffff;
+  border-radius: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 7px 25px 0px;
+}
+.food-menu h1 {
+  color: #7a7a7b;
+}
+.food-menu p {
+  margin: 1rem 0;
+}
+.food-heading {
+  text-align: center;
+}
+.food-category {
+  display: flex;
+}
+.food-category button {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: 1px solid #0F9D58;
+  border-radius: 2rem;
+  color: #0F9D58;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.food-category button:not(:first-child) {
+  margin-left: 1rem;
+}
+.food-category button:hover, .food-category button.active {
+  background-color: #0F9D58;
+  color: #ffffff;
+}
+.food-wrap {
+  display: none;
+}
+.food-wrap.active {
+  display: block;
+}
+.food-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 3rem;
+}
+.food-item {
+  position: relative;
+  width: calc(25% - 3rem);
+  margin-left: 30px;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.food-hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+}
+.food-hover-list {
+  display: flex;
+  width: 14rem;
+  justify-content: space-between;
+}
+.food-hover-item {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #0F9D58;
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+.food-hover-item:hover {
+  color: red;
+}
+.food-item:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.food-item:hover .food-hover {
+  display: block;
+}
+.food-image {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  border-radius: 2rem;
+}
+.food-img:hover {
+  transform: scale(2) rotate(45deg);
+}
+.food-info {
+  height: calc(100% - 230px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.food-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.review-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: -3rem;
+}
+.review-item {
+  width: calc(33.33% - 3rem);
+  margin-left: 3rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  box-shadow: -2px 1px 20px 2px rgba(0, 0, 0, 0.45);
+  border-radius: 3rem;
+  text-align: center;
+}
+.review-item.active {
+  transform: scale(1.15);
+}
+.review-author {
+  margin: 0 auto;
+  position: relative;
+}
+.review-author img {
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.review-author::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.15);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 7rem;
+  right: 7rem;
+  border-radius: 1rem;
+  background-color: #0F9D58;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0.5rem;
+  font-size: 2rem;
+  z-index: 99;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
